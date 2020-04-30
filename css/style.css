@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(128, 128, 128, 0.055);
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo,
+.about {
+  font-size: 30px;
+}
+
+.materialboxed {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  box-shadow: 1px 1px 3px black;
+}
+
+.develop {
+  font-weight: bolder;
+}
+
+.input-card {
+  box-shadow: 2px 2px 3px black;
+}
+
+.card-title p {
+  font-weight: bolder;
+}
+
+.infections-card {
+  border-bottom: 5px solid #03a9f4;
+}
+
+.recoveries-card {
+  border-bottom: 5px solid #4caf50;
+}
+
+.dies-card {
+  border-bottom: 5px solid #f44336;
+}
+
+.lastUpdate {
+  font-weight: bolder;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.chart-container {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.chart-footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.backBtn {
+  text-decoration: none;
+  color: rgba(0, 0, 255, 0.815);
+  padding: 5px;
+  border: 1px solid blue;
+  border-radius: 5px;
+}
+
+.backBtn:hover {
+  transform: scale(1.1);
+  background-color: blue;
+  color: white;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .data-card {
+    height: 120px;
+  }
+  .logo,
+  .about {
+    font-size: 20px;
+  }
+
+  .card-title p {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .chart-container {
+    width: 100%;
+  }
+}
